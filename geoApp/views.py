@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 import os
 import folium
 
-
 def home(request):
     crd_dir = os.path.join(os.getcwd(), 'media', 'crd')
     m = folium.Map(location=[-6.161184, 35.745426], height=2000)
